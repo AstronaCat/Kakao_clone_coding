@@ -1,9 +1,17 @@
 body {
     background-color: beige;    
-
-    p {
+    /*p {
         color:blue;
         font-size: 15px;
         font-style: oblique;
-    }
+    }*/
+}
+
+/*CSS를 link로 작성할 때는 <p>가 <body>에 속한 tag임에도 불구하고
+body tag안에 p tag를 집어 넣으면 적용이 되지 않음을 확인할 수 있다.
+결론: CSS로 디자인 할 때는 tag별로 분리하여 명령을 내리자.*/
+p {
+    color:blue;
+    font-size:15px;
+    font-style:oblique;
 }
