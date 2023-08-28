@@ -1,6 +1,1 @@
-# .gitignore file writes down the name of files we want to ignore
-# The name must be ".gitignore"
-# Any folders or files available
-
-.DS_Store   
-
+.DS_Store

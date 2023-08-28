@@ -1,0 +1,63 @@
+<!--
+    Most web servers are set to look for "index.html" file by default.
+    Therefore, the whole cloning process starts with building this index.html file.
+-->
+<!--                    [VSC 단축키] 
+    1. HTML이 확장자인 파일은 !를 입력하면 요약된 코드를 볼 수 있다.
+    2. Alt+클릭으로 설정된 여러 개의 커서는 동시에 움직인다. (코드 동시 작성가능)
+-->
+
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to KakaoTalk</title>
+</head>
+<body>
+    <div id="status-bar">
+        <!-- classname을 부모(status-bar)-자식(column) 관계를 사용해 distinct하게 작성
+            *BEM(=Block element modifier)의 규칙 -->
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-solid fa-wifi"></i>
+        <div class="status-bar__column">
+            <span>01:29</span>
+        </div>
+        <div class="status-bar__column">
+            <span>95%</span>
+            <i class="fas fa-solid fa-battery-full"></i>
+            <i class="fas fa-solid fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to KaKaoTalk</h1>
+        <p class="welcome-header__text">
+            If you have a Kakao Account, log in with your email or phone number.
+        </p>
+    </header>
+
+    <form id="login-form">
+        <input type="text" placeholder="Email or phone number" />
+        <input type="password" placeholder="Password" />
+        <input type="submit" value="Log In" />
+        <input type="submit" value="Sign Up" />
+        <a href="#">Find Kakao Account or Password</a>
+    </form>
+
+    <!-- script는 항상 마지막(body tag의 바로 위)에 위치 -->
+    <!-- code kit는 javascript로 작성한 stylesheet -->
+    <script src="https://kit.fontawesome.com/6478f529f2.js"
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>
+
+<!-- 
+    [ Icon을 사용하는 방법 ]
+    1. Create image by yourself
+    2. Use SVG = image file with no pixels, instead, it is a coordinate(math)
+        2.1. Heroicons
+        2.2. FontAwesome
+-->
